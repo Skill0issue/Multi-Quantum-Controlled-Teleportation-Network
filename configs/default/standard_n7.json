@@ -1,0 +1,881 @@
+{
+  "config": {
+    "senderID": "N0",
+    "receiverID": "N1",
+    "protocol": {
+      "type": "MQCT",
+      "mode": "cluster",
+      "threshold": 4,
+      "controllers": 7
+    },
+    "security": {
+      "enableVSS": true,
+      "enableMAC": true,
+      "enableTraps": true,
+      "trapCount": 10
+    },
+    "routing": {
+      "redundancyPaths": 3,
+      "maxHops": 10,
+      "strategy": "shortestPath"
+    },
+    "simulation": {
+      "shots": 10000,
+      "noiseModel": "depolarizing"
+    }
+  },
+  "nodes": [
+    {
+      "id": "N0",
+      "region": "eu-central",
+      "qubitCapacity": 29,
+      "coherenceTime": 0.582,
+      "gateError": 0.0059,
+      "measurementError": 0.003,
+      "byzantineProbability": 0.0694,
+      "silentProbability": 0.0339,
+      "neighbors": [
+        "N13",
+        "N6",
+        "N8",
+        "N10",
+        "N12",
+        "N16"
+      ]
+    },
+    {
+      "id": "N1",
+      "region": "eu-central",
+      "qubitCapacity": 40,
+      "coherenceTime": 0.6707,
+      "gateError": 0.0071,
+      "measurementError": 0.002,
+      "byzantineProbability": 0.0272,
+      "silentProbability": 0.0426,
+      "neighbors": [
+        "N8",
+        "N6",
+        "N10",
+        "N12"
+      ]
+    },
+    {
+      "id": "N2",
+      "region": "india-south",
+      "qubitCapacity": 48,
+      "coherenceTime": 0.2325,
+      "gateError": 0.0018,
+      "measurementError": 0.0011,
+      "byzantineProbability": 0.0529,
+      "silentProbability": 0.0457,
+      "neighbors": [
+        "N7",
+        "N18",
+        "N14"
+      ]
+    },
+    {
+      "id": "N3",
+      "region": "us-west",
+      "qubitCapacity": 44,
+      "coherenceTime": 0.7012,
+      "gateError": 0.0056,
+      "measurementError": 0.0065,
+      "byzantineProbability": 0.0104,
+      "silentProbability": 0.044,
+      "neighbors": [
+        "N22",
+        "N24",
+        "N23",
+        "N5",
+        "N21"
+      ]
+    },
+    {
+      "id": "N4",
+      "region": "eu-central",
+      "qubitCapacity": 34,
+      "coherenceTime": 0.7106,
+      "gateError": 0.005,
+      "measurementError": 0.0006,
+      "byzantineProbability": 0.096,
+      "silentProbability": 0.0292,
+      "neighbors": [
+        "N8",
+        "N15",
+        "N12",
+        "N13"
+      ]
+    },
+    {
+      "id": "N5",
+      "region": "us-west",
+      "qubitCapacity": 17,
+      "coherenceTime": 0.6586,
+      "gateError": 0.0062,
+      "measurementError": 0.0068,
+      "byzantineProbability": 0.0692,
+      "silentProbability": 0.0188,
+      "neighbors": [
+        "N24",
+        "N3",
+        "N23",
+        "N22",
+        "N21",
+        "N7",
+        "N11"
+      ]
+    },
+    {
+      "id": "N6",
+      "region": "eu-central",
+      "qubitCapacity": 42,
+      "coherenceTime": 0.7442,
+      "gateError": 0.0074,
+      "measurementError": 0.0094,
+      "byzantineProbability": 0.0261,
+      "silentProbability": 0.0398,
+      "neighbors": [
+        "N0",
+        "N1",
+        "N13",
+        "N12",
+        "N21"
+      ]
+    },
+    {
+      "id": "N7",
+      "region": "india-south",
+      "qubitCapacity": 24,
+      "coherenceTime": 0.6262,
+      "gateError": 0.0046,
+      "measurementError": 0.0085,
+      "byzantineProbability": 0.0621,
+      "silentProbability": 0.0341,
+      "neighbors": [
+        "N2",
+        "N18",
+        "N5"
+      ]
+    },
+    {
+      "id": "N8",
+      "region": "eu-central",
+      "qubitCapacity": 15,
+      "coherenceTime": 0.5598,
+      "gateError": 0.0091,
+      "measurementError": 0.0018,
+      "byzantineProbability": 0.0358,
+      "silentProbability": 0.0326,
+      "neighbors": [
+        "N1",
+        "N4",
+        "N12",
+        "N0",
+        "N15",
+        "N16",
+        "N10",
+        "N18"
+      ]
+    },
+    {
+      "id": "N9",
+      "region": "us-east",
+      "qubitCapacity": 11,
+      "coherenceTime": 0.873,
+      "gateError": 0.0073,
+      "measurementError": 0.0017,
+      "byzantineProbability": 0.0251,
+      "silentProbability": 0.0233,
+      "neighbors": [
+        "N11",
+        "N20",
+        "N15",
+        "N18"
+      ]
+    },
+    {
+      "id": "N10",
+      "region": "eu-central",
+      "qubitCapacity": 48,
+      "coherenceTime": 0.5036,
+      "gateError": 0.0057,
+      "measurementError": 0.002,
+      "byzantineProbability": 0.0093,
+      "silentProbability": 0.0212,
+      "neighbors": [
+        "N1",
+        "N8",
+        "N0"
+      ]
+    },
+    {
+      "id": "N11",
+      "region": "us-east",
+      "qubitCapacity": 42,
+      "coherenceTime": 0.3042,
+      "gateError": 0.0099,
+      "measurementError": 0.0018,
+      "byzantineProbability": 0.0103,
+      "silentProbability": 0.0087,
+      "neighbors": [
+        "N9",
+        "N20",
+        "N5",
+        "N19"
+      ]
+    },
+    {
+      "id": "N12",
+      "region": "eu-central",
+      "qubitCapacity": 21,
+      "coherenceTime": 0.4433,
+      "gateError": 0.009,
+      "measurementError": 0.0017,
+      "byzantineProbability": 0.0533,
+      "silentProbability": 0.0458,
+      "neighbors": [
+        "N8",
+        "N0",
+        "N1",
+        "N4",
+        "N6",
+        "N16",
+        "N14"
+      ]
+    },
+    {
+      "id": "N13",
+      "region": "eu-central",
+      "qubitCapacity": 10,
+      "coherenceTime": 0.4423,
+      "gateError": 0.0054,
+      "measurementError": 0.0063,
+      "byzantineProbability": 0.0786,
+      "silentProbability": 0.0478,
+      "neighbors": [
+        "N0",
+        "N6",
+        "N4",
+        "N15"
+      ]
+    },
+    {
+      "id": "N14",
+      "region": "asia-east",
+      "qubitCapacity": 17,
+      "coherenceTime": 0.3076,
+      "gateError": 0.002,
+      "measurementError": 0.0027,
+      "byzantineProbability": 0.0586,
+      "silentProbability": 0.033,
+      "neighbors": [
+        "N19",
+        "N17",
+        "N12",
+        "N2"
+      ]
+    },
+    {
+      "id": "N15",
+      "region": "eu-central",
+      "qubitCapacity": 20,
+      "coherenceTime": 0.751,
+      "gateError": 0.0011,
+      "measurementError": 0.0026,
+      "byzantineProbability": 0.0866,
+      "silentProbability": 0.0235,
+      "neighbors": [
+        "N4",
+        "N8",
+        "N16",
+        "N13",
+        "N9"
+      ]
+    },
+    {
+      "id": "N16",
+      "region": "eu-central",
+      "qubitCapacity": 41,
+      "coherenceTime": 0.2183,
+      "gateError": 0.0076,
+      "measurementError": 0.0022,
+      "byzantineProbability": 0.0914,
+      "silentProbability": 0.01,
+      "neighbors": [
+        "N8",
+        "N15",
+        "N0",
+        "N12"
+      ]
+    },
+    {
+      "id": "N17",
+      "region": "asia-east",
+      "qubitCapacity": 27,
+      "coherenceTime": 0.1137,
+      "gateError": 0.0052,
+      "measurementError": 0.0025,
+      "byzantineProbability": 0.0471,
+      "silentProbability": 0.0001,
+      "neighbors": [
+        "N14",
+        "N19"
+      ]
+    },
+    {
+      "id": "N18",
+      "region": "india-south",
+      "qubitCapacity": 38,
+      "coherenceTime": 0.9465,
+      "gateError": 0.006,
+      "measurementError": 0.0092,
+      "byzantineProbability": 0.0748,
+      "silentProbability": 0.0315,
+      "neighbors": [
+        "N2",
+        "N7",
+        "N8",
+        "N9"
+      ]
+    },
+    {
+      "id": "N19",
+      "region": "asia-east",
+      "qubitCapacity": 35,
+      "coherenceTime": 0.1926,
+      "gateError": 0.0067,
+      "measurementError": 0.0088,
+      "byzantineProbability": 0.0561,
+      "silentProbability": 0.0266,
+      "neighbors": [
+        "N14",
+        "N17",
+        "N24",
+        "N11"
+      ]
+    },
+    {
+      "id": "N20",
+      "region": "us-east",
+      "qubitCapacity": 26,
+      "coherenceTime": 0.1202,
+      "gateError": 0.0034,
+      "measurementError": 0.0074,
+      "byzantineProbability": 0.0892,
+      "silentProbability": 0.0123,
+      "neighbors": [
+        "N9",
+        "N11"
+      ]
+    },
+    {
+      "id": "N21",
+      "region": "us-west",
+      "qubitCapacity": 43,
+      "coherenceTime": 0.9794,
+      "gateError": 0.0092,
+      "measurementError": 0.0011,
+      "byzantineProbability": 0.0775,
+      "silentProbability": 0.0077,
+      "neighbors": [
+        "N5",
+        "N22",
+        "N3",
+        "N6"
+      ]
+    },
+    {
+      "id": "N22",
+      "region": "us-west",
+      "qubitCapacity": 17,
+      "coherenceTime": 0.2258,
+      "gateError": 0.0082,
+      "measurementError": 0.0092,
+      "byzantineProbability": 0.0316,
+      "silentProbability": 0.0308,
+      "neighbors": [
+        "N3",
+        "N5",
+        "N21",
+        "N23",
+        "N24"
+      ]
+    },
+    {
+      "id": "N23",
+      "region": "us-west",
+      "qubitCapacity": 33,
+      "coherenceTime": 0.547,
+      "gateError": 0.0029,
+      "measurementError": 0.0045,
+      "byzantineProbability": 0.0526,
+      "silentProbability": 0.0086,
+      "neighbors": [
+        "N3",
+        "N5",
+        "N24",
+        "N22"
+      ]
+    },
+    {
+      "id": "N24",
+      "region": "us-west",
+      "qubitCapacity": 28,
+      "coherenceTime": 0.9761,
+      "gateError": 0.0036,
+      "measurementError": 0.0074,
+      "byzantineProbability": 0.0731,
+      "silentProbability": 0.021,
+      "neighbors": [
+        "N3",
+        "N5",
+        "N23",
+        "N22",
+        "N19"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "N0",
+      "target": "N13",
+      "distance": 58,
+      "latency": 1,
+      "fidelity": 0.9861,
+      "loss": 0.0035
+    },
+    {
+      "source": "N0",
+      "target": "N6",
+      "distance": 117,
+      "latency": 2,
+      "fidelity": 0.9822,
+      "loss": 0.0022
+    },
+    {
+      "source": "N1",
+      "target": "N8",
+      "distance": 276,
+      "latency": 3,
+      "fidelity": 0.9716,
+      "loss": 0.0164
+    },
+    {
+      "source": "N1",
+      "target": "N6",
+      "distance": 255,
+      "latency": 3,
+      "fidelity": 0.973,
+      "loss": 0.018
+    },
+    {
+      "source": "N1",
+      "target": "N10",
+      "distance": 209,
+      "latency": 4,
+      "fidelity": 0.9761,
+      "loss": 0.0102
+    },
+    {
+      "source": "N4",
+      "target": "N8",
+      "distance": 157,
+      "latency": 3,
+      "fidelity": 0.9795,
+      "loss": 0.0023
+    },
+    {
+      "source": "N4",
+      "target": "N15",
+      "distance": 102,
+      "latency": 2,
+      "fidelity": 0.9832,
+      "loss": 0.004
+    },
+    {
+      "source": "N6",
+      "target": "N13",
+      "distance": 120,
+      "latency": 4,
+      "fidelity": 0.982,
+      "loss": 0.0138
+    },
+    {
+      "source": "N8",
+      "target": "N12",
+      "distance": 137,
+      "latency": 4,
+      "fidelity": 0.9809,
+      "loss": 0.0128
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "distance": 261,
+      "latency": 3,
+      "fidelity": 0.9726,
+      "loss": 0.0025
+    },
+    {
+      "source": "N8",
+      "target": "N15",
+      "distance": 73,
+      "latency": 2,
+      "fidelity": 0.9851,
+      "loss": 0.0098
+    },
+    {
+      "source": "N8",
+      "target": "N16",
+      "distance": 197,
+      "latency": 3,
+      "fidelity": 0.9769,
+      "loss": 0.0074
+    },
+    {
+      "source": "N10",
+      "target": "N8",
+      "distance": 132,
+      "latency": 2,
+      "fidelity": 0.9812,
+      "loss": 0.0065
+    },
+    {
+      "source": "N10",
+      "target": "N0",
+      "distance": 151,
+      "latency": 3,
+      "fidelity": 0.9799,
+      "loss": 0.0045
+    },
+    {
+      "source": "N12",
+      "target": "N0",
+      "distance": 240,
+      "latency": 5,
+      "fidelity": 0.974,
+      "loss": 0.002
+    },
+    {
+      "source": "N12",
+      "target": "N1",
+      "distance": 63,
+      "latency": 2,
+      "fidelity": 0.9858,
+      "loss": 0.004
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "distance": 199,
+      "latency": 4,
+      "fidelity": 0.9767,
+      "loss": 0.0085
+    },
+    {
+      "source": "N12",
+      "target": "N6",
+      "distance": 76,
+      "latency": 3,
+      "fidelity": 0.9849,
+      "loss": 0.0127
+    },
+    {
+      "source": "N13",
+      "target": "N4",
+      "distance": 190,
+      "latency": 3,
+      "fidelity": 0.9773,
+      "loss": 0.0112
+    },
+    {
+      "source": "N15",
+      "target": "N16",
+      "distance": 54,
+      "latency": 2,
+      "fidelity": 0.9864,
+      "loss": 0.0166
+    },
+    {
+      "source": "N15",
+      "target": "N13",
+      "distance": 157,
+      "latency": 3,
+      "fidelity": 0.9795,
+      "loss": 0.0185
+    },
+    {
+      "source": "N16",
+      "target": "N0",
+      "distance": 55,
+      "latency": 3,
+      "fidelity": 0.9863,
+      "loss": 0.0102
+    },
+    {
+      "source": "N16",
+      "target": "N12",
+      "distance": 61,
+      "latency": 1,
+      "fidelity": 0.9859,
+      "loss": 0.008
+    },
+    {
+      "source": "N2",
+      "target": "N7",
+      "distance": 239,
+      "latency": 3,
+      "fidelity": 0.9741,
+      "loss": 0.0123
+    },
+    {
+      "source": "N2",
+      "target": "N18",
+      "distance": 183,
+      "latency": 2,
+      "fidelity": 0.9778,
+      "loss": 0.0122
+    },
+    {
+      "source": "N7",
+      "target": "N18",
+      "distance": 178,
+      "latency": 2,
+      "fidelity": 0.9781,
+      "loss": 0.0024
+    },
+    {
+      "source": "N3",
+      "target": "N22",
+      "distance": 220,
+      "latency": 4,
+      "fidelity": 0.9753,
+      "loss": 0.0186
+    },
+    {
+      "source": "N3",
+      "target": "N24",
+      "distance": 121,
+      "latency": 2,
+      "fidelity": 0.9819,
+      "loss": 0.0103
+    },
+    {
+      "source": "N3",
+      "target": "N23",
+      "distance": 56,
+      "latency": 1,
+      "fidelity": 0.9863,
+      "loss": 0.0165
+    },
+    {
+      "source": "N5",
+      "target": "N24",
+      "distance": 90,
+      "latency": 1,
+      "fidelity": 0.984,
+      "loss": 0.0114
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "distance": 200,
+      "latency": 4,
+      "fidelity": 0.9767,
+      "loss": 0.0141
+    },
+    {
+      "source": "N5",
+      "target": "N23",
+      "distance": 207,
+      "latency": 3,
+      "fidelity": 0.9762,
+      "loss": 0.0151
+    },
+    {
+      "source": "N5",
+      "target": "N22",
+      "distance": 152,
+      "latency": 4,
+      "fidelity": 0.9799,
+      "loss": 0.011
+    },
+    {
+      "source": "N21",
+      "target": "N5",
+      "distance": 202,
+      "latency": 3,
+      "fidelity": 0.9765,
+      "loss": 0.0109
+    },
+    {
+      "source": "N21",
+      "target": "N22",
+      "distance": 64,
+      "latency": 2,
+      "fidelity": 0.9857,
+      "loss": 0.0055
+    },
+    {
+      "source": "N21",
+      "target": "N3",
+      "distance": 113,
+      "latency": 3,
+      "fidelity": 0.9825,
+      "loss": 0.0063
+    },
+    {
+      "source": "N23",
+      "target": "N24",
+      "distance": 67,
+      "latency": 1,
+      "fidelity": 0.9855,
+      "loss": 0.0028
+    },
+    {
+      "source": "N23",
+      "target": "N22",
+      "distance": 87,
+      "latency": 1,
+      "fidelity": 0.9842,
+      "loss": 0.0058
+    },
+    {
+      "source": "N24",
+      "target": "N22",
+      "distance": 286,
+      "latency": 5,
+      "fidelity": 0.9709,
+      "loss": 0.0097
+    },
+    {
+      "source": "N9",
+      "target": "N11",
+      "distance": 240,
+      "latency": 4,
+      "fidelity": 0.974,
+      "loss": 0.0152
+    },
+    {
+      "source": "N9",
+      "target": "N20",
+      "distance": 171,
+      "latency": 4,
+      "fidelity": 0.9786,
+      "loss": 0.0135
+    },
+    {
+      "source": "N11",
+      "target": "N20",
+      "distance": 159,
+      "latency": 4,
+      "fidelity": 0.9794,
+      "loss": 0.0169
+    },
+    {
+      "source": "N14",
+      "target": "N19",
+      "distance": 105,
+      "latency": 4,
+      "fidelity": 0.983,
+      "loss": 0.0087
+    },
+    {
+      "source": "N14",
+      "target": "N17",
+      "distance": 237,
+      "latency": 4,
+      "fidelity": 0.9742,
+      "loss": 0.0059
+    },
+    {
+      "source": "N17",
+      "target": "N19",
+      "distance": 181,
+      "latency": 2,
+      "fidelity": 0.9779,
+      "loss": 0.0029
+    },
+    {
+      "source": "N8",
+      "target": "N18",
+      "distance": 1973,
+      "latency": 21,
+      "fidelity": 0.8513,
+      "loss": 0.0249
+    },
+    {
+      "source": "N6",
+      "target": "N21",
+      "distance": 1073,
+      "latency": 12,
+      "fidelity": 0.8963,
+      "loss": 0.0406
+    },
+    {
+      "source": "N15",
+      "target": "N9",
+      "distance": 994,
+      "latency": 11,
+      "fidelity": 0.9003,
+      "loss": 0.0189
+    },
+    {
+      "source": "N12",
+      "target": "N14",
+      "distance": 1160,
+      "latency": 12,
+      "fidelity": 0.892,
+      "loss": 0.0117
+    },
+    {
+      "source": "N7",
+      "target": "N5",
+      "distance": 1253,
+      "latency": 16,
+      "fidelity": 0.8873,
+      "loss": 0.02
+    },
+    {
+      "source": "N18",
+      "target": "N9",
+      "distance": 1786,
+      "latency": 19,
+      "fidelity": 0.8607,
+      "loss": 0.0277
+    },
+    {
+      "source": "N2",
+      "target": "N14",
+      "distance": 989,
+      "latency": 13,
+      "fidelity": 0.9005,
+      "loss": 0.0306
+    },
+    {
+      "source": "N5",
+      "target": "N11",
+      "distance": 1845,
+      "latency": 18,
+      "fidelity": 0.8578,
+      "loss": 0.0129
+    },
+    {
+      "source": "N24",
+      "target": "N19",
+      "distance": 1629,
+      "latency": 18,
+      "fidelity": 0.8685,
+      "loss": 0.01
+    },
+    {
+      "source": "N11",
+      "target": "N19",
+      "distance": 1488,
+      "latency": 16,
+      "fidelity": 0.8756,
+      "loss": 0.0213
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+qubit,trial_type,input_state,trace_dist,pass
+C1 (q[2]),regular,psi,0.0,True
+C2 (q[3]),regular,psi,0.0,True
+C3 (q[4]),regular,psi,0.0,True
+C4 (q[5]),regular,psi,0.0,True
+C5 (q[6]),regular,psi,0.0,True
+C6 (q[7]),regular,psi,0.0,True
+C7 (q[8]),regular,psi,0.0,True
+C8 (q[9]),regular,psi,0.0,True
+C1 (q[2]),regular,zero,0.0,True
+C2 (q[3]),regular,zero,0.0,True
+C3 (q[4]),regular,zero,0.0,True
+C4 (q[5]),regular,zero,0.0,True
+C5 (q[6]),regular,zero,0.0,True
+C6 (q[7]),regular,zero,0.0,True
+C7 (q[8]),regular,zero,0.0,True
+C8 (q[9]),regular,zero,0.0,True
+C1 (q[2]),regular,plus,0.0,True
+C2 (q[3]),regular,plus,0.0,True
+C3 (q[4]),regular,plus,0.0,True
+C4 (q[5]),regular,plus,0.0,True
+C5 (q[6]),regular,plus,0.0,True
+C6 (q[7]),regular,plus,0.0,True
+C7 (q[8]),regular,plus,0.0,True
+C8 (q[9]),regular,plus,0.0,True
+C1 (q[2]),verification,|Φ+⟩ half,0.0,True
+C2 (q[3]),verification,|Φ+⟩ half,0.0,True
+C3 (q[4]),verification,|Φ+⟩ half,0.0,True
+C4 (q[5]),verification,|Φ+⟩ half,0.0,True
+C5 (q[6]),verification,|Φ+⟩ half,0.0,True
+C6 (q[7]),verification,|Φ+⟩ half,0.0,True
+C7 (q[8]),verification,|Φ+⟩ half,0.0,True
+C8 (q[9]),verification,|Φ+⟩ half,0.0,True

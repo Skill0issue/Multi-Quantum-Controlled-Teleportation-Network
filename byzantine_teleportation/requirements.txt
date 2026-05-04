@@ -1,0 +1,9 @@
+# Byzantine-Tolerant Cluster-State Teleportation Simulator
+# Python >= 3.10 required
+
+qiskit>=1.0.0
+qiskit-aer>=0.14.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0

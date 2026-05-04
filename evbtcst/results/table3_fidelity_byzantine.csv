@@ -1,0 +1,4 @@
+f,n,n_regular,n_verification,F_before,F_after_VSS,M_fail_before,M_fail_after_VSS,verif_pass_rate,sprt_flagged,xor_cancel_rate,xor_cancel_theory,noise_level,n_trials
+0,8,243,57,0.9212,0.9212,0.0,0.0,0.8246,[],0.0,0.15,0.01,300
+1,8,251,49,0.599,0.7854,0.6375,0.2709,0.551,[],0.0,0.15,0.01,300
+2,8,263,37,0.5405,0.6426,0.6768,0.5133,0.3784,[],0.0,0.15,0.01,300

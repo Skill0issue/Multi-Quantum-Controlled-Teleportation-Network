@@ -1,0 +1,481 @@
+{
+  "config": {
+    "senderID": "N0",
+    "receiverID": "N1",
+    "protocol": {
+      "type": "MQCT",
+      "mode": "cluster",
+      "threshold": 3,
+      "controllers": 5
+    },
+    "security": {
+      "enableVSS": true,
+      "enableMAC": true,
+      "enableTraps": true,
+      "trapCount": 10
+    },
+    "routing": {
+      "redundancyPaths": 3,
+      "maxHops": 10,
+      "strategy": "shortestPath"
+    },
+    "simulation": {
+      "shots": 10000,
+      "noiseModel": "depolarizing"
+    }
+  },
+  "nodes": [
+    {
+      "id": "N0",
+      "region": "eu-central",
+      "qubitCapacity": 27,
+      "coherenceTime": 0.1776,
+      "gateError": 0.0026,
+      "measurementError": 0.0057,
+      "byzantineProbability": 0.0769,
+      "silentProbability": 0.0398,
+      "neighbors": [
+        "N2",
+        "N10",
+        "N3",
+        "N8"
+      ]
+    },
+    {
+      "id": "N1",
+      "region": "india-south",
+      "qubitCapacity": 50,
+      "coherenceTime": 0.7482,
+      "gateError": 0.0067,
+      "measurementError": 0.0042,
+      "byzantineProbability": 0.0259,
+      "silentProbability": 0.0186,
+      "neighbors": [
+        "N5",
+        "N9",
+        "N14"
+      ]
+    },
+    {
+      "id": "N2",
+      "region": "eu-central",
+      "qubitCapacity": 50,
+      "coherenceTime": 0.504,
+      "gateError": 0.007,
+      "measurementError": 0.0006,
+      "byzantineProbability": 0.0144,
+      "silentProbability": 0.007,
+      "neighbors": [
+        "N0",
+        "N10",
+        "N5",
+        "N11"
+      ]
+    },
+    {
+      "id": "N3",
+      "region": "us-east",
+      "qubitCapacity": 22,
+      "coherenceTime": 0.5656,
+      "gateError": 0.008,
+      "measurementError": 0.0014,
+      "byzantineProbability": 0.08,
+      "silentProbability": 0.0129,
+      "neighbors": [
+        "N13",
+        "N0",
+        "N11",
+        "N8"
+      ]
+    },
+    {
+      "id": "N4",
+      "region": "asia-east",
+      "qubitCapacity": 43,
+      "coherenceTime": 0.454,
+      "gateError": 0.0015,
+      "measurementError": 0.0021,
+      "byzantineProbability": 0.0058,
+      "silentProbability": 0.0238,
+      "neighbors": [
+        "N11",
+        "N6",
+        "N7",
+        "N12"
+      ]
+    },
+    {
+      "id": "N5",
+      "region": "india-south",
+      "qubitCapacity": 40,
+      "coherenceTime": 0.6581,
+      "gateError": 0.0011,
+      "measurementError": 0.008,
+      "byzantineProbability": 0.0758,
+      "silentProbability": 0.0332,
+      "neighbors": [
+        "N1",
+        "N14",
+        "N9",
+        "N2",
+        "N13",
+        "N7"
+      ]
+    },
+    {
+      "id": "N6",
+      "region": "asia-east",
+      "qubitCapacity": 13,
+      "coherenceTime": 0.925,
+      "gateError": 0.0013,
+      "measurementError": 0.0041,
+      "byzantineProbability": 0.0936,
+      "silentProbability": 0.0196,
+      "neighbors": [
+        "N4",
+        "N11",
+        "N7"
+      ]
+    },
+    {
+      "id": "N7",
+      "region": "asia-east",
+      "qubitCapacity": 10,
+      "coherenceTime": 0.3663,
+      "gateError": 0.0046,
+      "measurementError": 0.0051,
+      "byzantineProbability": 0.038,
+      "silentProbability": 0.042,
+      "neighbors": [
+        "N4",
+        "N6",
+        "N11",
+        "N5"
+      ]
+    },
+    {
+      "id": "N8",
+      "region": "us-west",
+      "qubitCapacity": 50,
+      "coherenceTime": 0.5348,
+      "gateError": 0.0028,
+      "measurementError": 0.0077,
+      "byzantineProbability": 0.0058,
+      "silentProbability": 0.0092,
+      "neighbors": [
+        "N12",
+        "N0",
+        "N3"
+      ]
+    },
+    {
+      "id": "N9",
+      "region": "india-south",
+      "qubitCapacity": 34,
+      "coherenceTime": 0.3528,
+      "gateError": 0.0092,
+      "measurementError": 0.0085,
+      "byzantineProbability": 0.0532,
+      "silentProbability": 0.0474,
+      "neighbors": [
+        "N1",
+        "N5",
+        "N14"
+      ]
+    },
+    {
+      "id": "N10",
+      "region": "eu-central",
+      "qubitCapacity": 40,
+      "coherenceTime": 0.2414,
+      "gateError": 0.004,
+      "measurementError": 0.0099,
+      "byzantineProbability": 0.0074,
+      "silentProbability": 0.0191,
+      "neighbors": [
+        "N0",
+        "N2"
+      ]
+    },
+    {
+      "id": "N11",
+      "region": "asia-east",
+      "qubitCapacity": 17,
+      "coherenceTime": 0.8928,
+      "gateError": 0.0066,
+      "measurementError": 0.004,
+      "byzantineProbability": 0.0101,
+      "silentProbability": 0.0094,
+      "neighbors": [
+        "N4",
+        "N6",
+        "N7",
+        "N2",
+        "N3"
+      ]
+    },
+    {
+      "id": "N12",
+      "region": "us-west",
+      "qubitCapacity": 39,
+      "coherenceTime": 0.5703,
+      "gateError": 0.0062,
+      "measurementError": 0.0096,
+      "byzantineProbability": 0.0742,
+      "silentProbability": 0.0404,
+      "neighbors": [
+        "N8",
+        "N14",
+        "N4"
+      ]
+    },
+    {
+      "id": "N13",
+      "region": "us-east",
+      "qubitCapacity": 29,
+      "coherenceTime": 0.7787,
+      "gateError": 0.0027,
+      "measurementError": 0.0052,
+      "byzantineProbability": 0.0921,
+      "silentProbability": 0.0224,
+      "neighbors": [
+        "N3",
+        "N5"
+      ]
+    },
+    {
+      "id": "N14",
+      "region": "india-south",
+      "qubitCapacity": 50,
+      "coherenceTime": 0.1128,
+      "gateError": 0.0069,
+      "measurementError": 0.0086,
+      "byzantineProbability": 0.096,
+      "silentProbability": 0.0451,
+      "neighbors": [
+        "N5",
+        "N9",
+        "N1",
+        "N12"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "N0",
+      "target": "N2",
+      "distance": 220,
+      "latency": 5,
+      "fidelity": 0.9753,
+      "loss": 0.0104
+    },
+    {
+      "source": "N0",
+      "target": "N10",
+      "distance": 194,
+      "latency": 4,
+      "fidelity": 0.9771,
+      "loss": 0.0137
+    },
+    {
+      "source": "N2",
+      "target": "N10",
+      "distance": 63,
+      "latency": 2,
+      "fidelity": 0.9858,
+      "loss": 0.0196
+    },
+    {
+      "source": "N1",
+      "target": "N5",
+      "distance": 53,
+      "latency": 1,
+      "fidelity": 0.9865,
+      "loss": 0.016
+    },
+    {
+      "source": "N1",
+      "target": "N9",
+      "distance": 146,
+      "latency": 3,
+      "fidelity": 0.9803,
+      "loss": 0.0085
+    },
+    {
+      "source": "N5",
+      "target": "N14",
+      "distance": 164,
+      "latency": 4,
+      "fidelity": 0.9791,
+      "loss": 0.0039
+    },
+    {
+      "source": "N5",
+      "target": "N9",
+      "distance": 259,
+      "latency": 5,
+      "fidelity": 0.9727,
+      "loss": 0.0188
+    },
+    {
+      "source": "N9",
+      "target": "N14",
+      "distance": 80,
+      "latency": 2,
+      "fidelity": 0.9847,
+      "loss": 0.0087
+    },
+    {
+      "source": "N14",
+      "target": "N1",
+      "distance": 171,
+      "latency": 4,
+      "fidelity": 0.9786,
+      "loss": 0.0092
+    },
+    {
+      "source": "N3",
+      "target": "N13",
+      "distance": 91,
+      "latency": 3,
+      "fidelity": 0.9839,
+      "loss": 0.0187
+    },
+    {
+      "source": "N4",
+      "target": "N11",
+      "distance": 188,
+      "latency": 2,
+      "fidelity": 0.9775,
+      "loss": 0.0072
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "distance": 112,
+      "latency": 2,
+      "fidelity": 0.9825,
+      "loss": 0.0142
+    },
+    {
+      "source": "N4",
+      "target": "N7",
+      "distance": 218,
+      "latency": 4,
+      "fidelity": 0.9755,
+      "loss": 0.0181
+    },
+    {
+      "source": "N6",
+      "target": "N11",
+      "distance": 133,
+      "latency": 4,
+      "fidelity": 0.9811,
+      "loss": 0.0037
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "distance": 214,
+      "latency": 5,
+      "fidelity": 0.9757,
+      "loss": 0.0184
+    },
+    {
+      "source": "N7",
+      "target": "N11",
+      "distance": 66,
+      "latency": 3,
+      "fidelity": 0.9856,
+      "loss": 0.0117
+    },
+    {
+      "source": "N8",
+      "target": "N12",
+      "distance": 282,
+      "latency": 4,
+      "fidelity": 0.9712,
+      "loss": 0.0181
+    },
+    {
+      "source": "N2",
+      "target": "N5",
+      "distance": 1295,
+      "latency": 15,
+      "fidelity": 0.8852,
+      "loss": 0.0148
+    },
+    {
+      "source": "N0",
+      "target": "N3",
+      "distance": 936,
+      "latency": 10,
+      "fidelity": 0.9032,
+      "loss": 0.0171
+    },
+    {
+      "source": "N2",
+      "target": "N11",
+      "distance": 1293,
+      "latency": 15,
+      "fidelity": 0.8853,
+      "loss": 0.0107
+    },
+    {
+      "source": "N0",
+      "target": "N8",
+      "distance": 1907,
+      "latency": 20,
+      "fidelity": 0.8546,
+      "loss": 0.0369
+    },
+    {
+      "source": "N5",
+      "target": "N13",
+      "distance": 1446,
+      "latency": 17,
+      "fidelity": 0.8777,
+      "loss": 0.0358
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "distance": 1074,
+      "latency": 11,
+      "fidelity": 0.8963,
+      "loss": 0.0318
+    },
+    {
+      "source": "N14",
+      "target": "N12",
+      "distance": 1288,
+      "latency": 14,
+      "fidelity": 0.8856,
+      "loss": 0.0165
+    },
+    {
+      "source": "N3",
+      "target": "N11",
+      "distance": 1556,
+      "latency": 17,
+      "fidelity": 0.8722,
+      "loss": 0.0286
+    },
+    {
+      "source": "N3",
+      "target": "N8",
+      "distance": 1113,
+      "latency": 13,
+      "fidelity": 0.8943,
+      "loss": 0.0389
+    },
+    {
+      "source": "N4",
+      "target": "N12",
+      "distance": 1977,
+      "latency": 22,
+      "fidelity": 0.8511,
+      "loss": 0.0306
+    }
+  ]
+}
